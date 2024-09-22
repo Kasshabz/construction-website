@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.nav {
+  background-color: green; /* Change to green */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem; /* Increase padding */
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav a {
+  color: white; /* White text color */
+  text-decoration: none;
+}
+.nav a:hover {
+  color: lightgray; /* Change text color on hover */
+}
+.site-name {
+  font-size: 1.5rem; /* Make the text larger */
+  font-weight: bold; /* Optional: make the text bold */
+  color: white; /* Optional: to ensure the text color is white */
+  margin-left: 6px;
+}
