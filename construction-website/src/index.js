@@ -1,20 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import "./styles.css";
-import App from "./App";
+import { createRoot } from "react-dom/client"; // Correct import
 import { BrowserRouter } from "react-router-dom";
-import reportWebVitals from "./reportWebVitals";
+import App from "./App";
+import "./tailwind.css"; // Tailwind CSS
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// Find the root element
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+// Wrap the App in BrowserRouter and render it
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
