@@ -25,24 +25,24 @@ export default function Services() {
     },
     {
       title: "Plastering & Rendering",
-      image: "/images/plastering.jpg",
+      image: "/images/stock-plastering.jpg",
       description: "High-quality plastering and rendering services.",
       moreInfo:
         "Our plastering and rendering work adheres to UK building standards, providing both aesthetic appeal and protection. We deliver tailored finishes that ensure long-lasting, smooth surfaces for both interior and exterior applications.",
     },
     {
       title: "Plumbing",
-      image: "/images/plumbing.jpg",
+      image: "/images/plumbing-stock.jpg",
       description: "Reliable and efficient plumbing services.",
       moreInfo:
         "Meeting all British plumbing regulations, we provide expert plumbing solutions for repairs, installations, and maintenance. We ensure that water systems are safe, efficient, and tailored to the needs of each project.",
     },
     {
-      title: "Roofing",
-      image: "/images/roofing.jpg",
-      description: "Professional roofing solutions.",
+      title: "Commercial Fit-outs",
+      image: "/images/commercial-image.jpg",
+      description: "Custom commercial fit-out services.",
       moreInfo:
-        "Following UK standards (BS 5534), we provide custom roofing services for all types of buildings. Using high-quality materials and precise workmanship, we ensure each roof is built to last and withstand harsh weather conditions.",
+        "Fully compliant with UK building and safety regulations, we offer tailored commercial fit-out services that balance functionality and design. From offices to retail spaces, we ensure quality craftsmanship in every project.",
     },
   ];
 
