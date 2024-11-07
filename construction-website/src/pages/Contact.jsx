@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa"; // Importing icons from react-icons
-import axios from "axios"; // Import axios to make the POST request
+import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import axios from "axios";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,6 +8,7 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [statusMessage, setStatusMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,12 +17,31 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatusMessage("");
+
+    // Front-end Validation
+    const { name, email, message } = formData;
+    if (!name || !email || !message) {
+      setStatusMessage("All fields are required.");
+      return;
+    }
+
+    // Email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setStatusMessage("Please enter a valid email address.");
+      return;
+    }
+
     try {
-      await axios.post("http://localhost:3001/send", formData);
-      alert("Email sent successfully!");
+      await axios.post(
+        "https://construction-website-backend.onrender.com/send",
+        formData
+      );
+      setStatusMessage("Email sent successfully!");
     } catch (error) {
       console.error("Error sending email:", error);
-      alert("Failed to send email.");
+      setStatusMessage("Failed to send email. Please try again later.");
     }
   };
 
@@ -56,6 +76,7 @@ export default function Contact() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                required // HTML5 validation for required field
                 className="w-full p-2 border border-gray-300 rounded mt-2 text-black"
                 placeholder="Your name"
               />
@@ -63,10 +84,11 @@ export default function Contact() {
             <div className="mb-4">
               <label className="block text-white mb-2">Email</label>
               <input
-                type="email"
+                type="email" // Ensures email format validation
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                required // HTML5 validation for required field
                 className="w-full p-2 border border-gray-300 rounded mt-2 text-black"
                 placeholder="Your email"
               />
@@ -77,6 +99,7 @@ export default function Contact() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
+                required // HTML5 validation for required field
                 className="w-full p-2 border border-gray-300 rounded mt-2 text-black"
                 placeholder="Your message"></textarea>
             </div>
@@ -84,6 +107,13 @@ export default function Contact() {
               Submit
             </button>
           </form>
+          {/* Status Message */}
+          {statusMessage && (
+            <p
+              className={`mt-4 font-bold ${statusMessage.includes("successfully") ? "text-green-500" : "text-red-500"}`}>
+              {statusMessage}
+            </p>
+          )}
         </div>
 
         {/* Social Media Links */}

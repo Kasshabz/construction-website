@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import QuoteButton from "./QuoteButton";
 
 export default function Hero() {
   return (
     <section
       className="relative flex h-screen items-center justify-center bg-cover bg-center text-white"
       style={{
-        backgroundImage: `url('/images/hero-image.jpg')`, // Replace with your image path
+        backgroundImage: `url('/images/team-pic.jpg')`, // Replace with your image path
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}>
@@ -24,12 +24,7 @@ export default function Hero() {
           completed to the highest standards and at a fair price.
         </p>
 
-        {/* Green button linking to the Contact page */}
-        <Link to="/contact">
-          <button className="rounded bg-green-600 py-2 px-6 font-bold text-white hover:bg-green-700">
-            Get a Quote
-          </button>
-        </Link>
+        <QuoteButton />
       </div>
     </section>
   );
