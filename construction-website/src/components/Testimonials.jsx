@@ -8,7 +8,7 @@ export default function Testimonials() {
         "Armstrong Buildings exceeded our expectations with their attention to detail and craftsmanship. Our new extension is perfect!",
     },
     {
-      name: "Kaswara Shabuo",
+      name: "Hamza Ali",
       feedback:
         "Professional and reliable. Armstrong Buildings delivered everything on time and within budget. Highly recommend!",
     },

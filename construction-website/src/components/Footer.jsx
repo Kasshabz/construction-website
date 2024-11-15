@@ -21,7 +21,7 @@ export default function Footer() {
             <a
               href="mailto:joe@armstrongbuildings.co.uk"
               className="text-white hover:text-gray-200">
-              Joe@armstrongbuildings.co.uk
+              Joseph@armstrongbuildings.co.uk
             </a>
           </p>
           <p>
@@ -29,7 +29,7 @@ export default function Footer() {
             <a
               href="tel:+441611234567"
               className="text-white hover:text-gray-200">
-              0161 123 4567
+              07387 500116
             </a>
           </p>
         </div>

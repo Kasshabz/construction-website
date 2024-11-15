@@ -54,15 +54,15 @@ export default function Contact() {
         <p className="text-xl mb-4 text-white">
           Email:{" "}
           <a
-            href="mailto:joe@armstrongbuildings.co.uk"
+            href="mailto:joseph@armstrongbuildings.co.uk"
             className="text-green-500">
-            Joe@armstrongbuildings.co.uk
+            joseph@armstrongbuildings.co.uk
           </a>
         </p>
         <p className="text-xl mb-12 text-white">
           Phone:{" "}
           <a href="tel:+441611234567" className="text-green-500">
-            0161 123 4567
+            07387 500116
           </a>
         </p>
 
