@@ -10,7 +10,7 @@ import {
 export default function TopBar() {
   return (
     <div className="bg-black text-white py-2">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         {/* Left Section: Phone */}
         <div className="flex items-center space-x-4">
           <a
@@ -32,7 +32,7 @@ export default function TopBar() {
         </div>
 
         {/* Right Section: Social Media Links */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center justify-center space-x-4">
           <a
             href="https://www.instagram.com/armstrong_building/"
             target="_blank"

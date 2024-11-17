@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import QuoteButton from "./QuoteButton";
 
-export default function Services() {
+export default function ServicesC() {
   const services = [
     {
       title: "Brickwork & Groundwork",
@@ -51,7 +51,7 @@ export default function Services() {
     <section className="bg-black py-12">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold text-white mb-8">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <FlipCard key={index} service={service} />
           ))}
@@ -66,12 +66,18 @@ function FlipCard({ service }) {
 
   return (
     <div
-      className={`flip-card ${flipped ? "flipped" : ""}`}
+      className={`flip-card ${flipped ? "flipped" : ""} transform transition-transform duration-500 hover:scale-105`}
       onClick={() => setFlipped(!flipped)}
-      style={{ position: "relative", width: "300px", height: "400px" }}
-    >
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "100%",
+        maxWidth: "300px",
+        maxHeight: "400px",
+        margin: "auto",
+      }}>
       {/* Front of the card */}
-      <div className="flip-card-front relative p-6 border rounded-lg shadow-lg bg-white overflow-hidden">
+      <div className="flip-card-front relative p-6 border rounded-lg shadow-lg bg-white overflow-hidden h-full">
         <img
           src={service.image}
           alt={service.title}
@@ -86,14 +92,13 @@ function FlipCard({ service }) {
           onClick={(e) => {
             e.stopPropagation(); // Prevent flipping the card when clicking the button
             setFlipped(true);
-          }}
-        >
+          }}>
           Find Out More
         </button>
       </div>
 
       {/* Back of the card */}
-      <div className="flip-card-back p-6 border rounded-lg shadow-lg bg-white flex flex-col items-start space-y-4">
+      <div className="flip-card-back p-6 border rounded-lg shadow-lg bg-white flex flex-col items-start space-y-4 h-full">
         <h3 className="text-xl font-bold text-black mb-2">{service.title}</h3>
         <p className="text-gray-800">{service.moreInfo}</p>
 
@@ -106,8 +111,7 @@ function FlipCard({ service }) {
           onClick={(e) => {
             e.stopPropagation(); // Prevent flipping the card when clicking the button
             setFlipped(false);
-          }}
-        >
+          }}>
           Close
         </button>
       </div>
