@@ -1,46 +1,52 @@
 import React, { useState } from "react";
 import QuoteButton from "./QuoteButton";
+import brickworkImage from "../assets/brick-work1.JPG";
+import joineryImage from "../assets/joinery-roofing.JPG";
+import landscapingImage from "../assets/front-door.jpg";
+import plasteringImage from "../assets/plastering-rendering.jpg";
+import plumbingImage from "../assets/arm-plumbing.jpg";
+import commercialImage from "../assets/commercial-image.jpg";
 
 export default function ServicesC() {
   const services = [
     {
       title: "Brickwork & Groundwork",
-      image: "src/assets/brick-work1.JPG",
+      image: brickworkImage,
       description: "Top-quality bricklaying and groundwork.",
       moreInfo:
         "Every brick and groundwork project complies with UK building regulations, ensuring safety and durability. We offer bespoke solutions for your specific needs, using high-quality materials to deliver lasting results.",
     },
     {
       title: "Joinery & Roofing",
-      image: "src/assets/joinery-roofing.JPG",
+      image: joineryImage,
       description: "Expert joinery and roofing services.",
       moreInfo:
         "Adhering to British Standards (BS 5534 for roofs and BS 5268 for timber structures), we offer tailored joinery and roofing services. Whether it’s a minor repair or a complete installation, our use of premium materials ensures a durable finish.",
     },
     {
       title: "Landscaping & Driveways",
-      image: "src/assets/front-door.jpg",
+      image: landscapingImage,
       description: "Professional landscaping and driveway services.",
       moreInfo:
         "All landscaping and driveway installations are fully compliant with UK planning regulations. We design and build outdoor spaces that are both beautiful and practical, using top-tier materials to enhance your property’s value.",
     },
     {
       title: "Plastering & Rendering",
-      image: "src/assets/plastering-rendering.jpg",
+      image: plasteringImage,
       description: "High-quality plastering and rendering services.",
       moreInfo:
         "Our plastering and rendering work adheres to UK building standards, providing both aesthetic appeal and protection. We deliver tailored finishes that ensure long-lasting, smooth surfaces for both interior and exterior applications.",
     },
     {
       title: "Plumbing",
-      image: "src/assets/arm-plumbing.jpg",
+      image: plumbingImage,
       description: "Reliable and efficient plumbing services.",
       moreInfo:
         "Meeting all British plumbing regulations, we provide expert plumbing solutions for repairs, installations, and maintenance. We ensure that water systems are safe, efficient, and tailored to the needs of each project.",
     },
     {
       title: "Commercial Fit-outs",
-      image: "src/assets/commercial-image.jpg",
+      image: commercialImage,
       description: "Custom commercial fit-out services.",
       moreInfo:
         "Fully compliant with UK building and safety regulations, we offer tailored commercial fit-out services that balance functionality and design. From offices to retail spaces, we ensure quality craftsmanship in every project.",

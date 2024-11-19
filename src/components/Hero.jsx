@@ -1,11 +1,12 @@
 import QuoteButton from "./QuoteButton";
+import teamPic from "../assets/team-pic.JPG";
 
 export default function Hero() {
   return (
     <section
       className="relative flex h-screen items-center justify-center bg-cover bg-center text-white"
       style={{
-        backgroundImage: `url('src/assets/team-pic.jpg')`, // Replace with your image path
+        backgroundImage: `url(${teamPic})`, // Replace with your image path
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}>
