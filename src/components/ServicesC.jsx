@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import QuoteButton from "./QuoteButton";
 import brickworkImage from "../assets/brick-work1.JPG";
 import joineryImage from "../assets/joinery-roofing.JPG";
-import landscapingImage from "../assets/front-door.jpg";
-import plasteringImage from "../assets/plastering-rendering.jpg";
-import plumbingImage from "../assets/arm-plumbing.jpg";
-import commercialImage from "../assets/commercial-image.jpg";
+import landscapingImage from "../assets/front-door.JPG";
+import plasteringImage from "../assets/plastering-rendering.JPG";
+import plumbingImage from "../assets/arm-plumbing.JPG";
+import commercialImage from "../assets/commercial-image.JPG";
 
 export default function ServicesC() {
   const services = [
