@@ -1,5 +1,5 @@
 import QuoteButton from "./QuoteButton";
-import teamPic from "../assets/team-pic.JPG";
+import teamPic from "../assets/brick-work1.JPG";
 
 export default function Hero() {
   return (
