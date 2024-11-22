@@ -61,7 +61,7 @@ export default function Contact() {
         </p>
         <p className="text-xl mb-12 text-white">
           Phone:{" "}
-          <a href="tel:+441611234567" className="text-green-500">
+          <a href="tel:+44 7387 500116" className="text-green-500">
             07387 500116
           </a>
         </p>
