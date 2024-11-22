@@ -11,7 +11,7 @@ export default function About() {
           {" "}
           {/* Set image height to 650px, no margin-bottom */}
           <img
-            src="src/assets/hero-image.jpg" // Replace with your image path
+            src="src/assets/hero-image.JPG" // Replace with your image path
             alt="Armstrong Buildings Team"
             className="w-full h-auto max-h-[650px] object-cover rounded-lg shadow-lg"
           />
