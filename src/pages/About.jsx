@@ -1,4 +1,5 @@
 import React from "react";
+import heroImage from "../assets/hero-image.JPG";
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
           {" "}
           {/* Set image height to 650px, no margin-bottom */}
           <img
-            src="src/assets/hero-image.JPG" // Replace with your image path
+            src={heroImage} // Replace with your image path
             alt="Armstrong Buildings Team"
             className="w-full h-auto max-h-[650px] object-cover rounded-lg shadow-lg"
           />
