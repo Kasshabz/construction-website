@@ -4,7 +4,7 @@ import brickworkImage from "../assets/brick-work1.JPG";
 import joineryImage from "../assets/joinery-roofing.JPG";
 import landscapingImage from "../assets/front-door.JPG";
 import plasteringImage from "../assets/plastering-rendering.JPG";
-import plumbingImage from "../assets/arm-plumbing.JPG";
+import plumbingImage from "../assets/arm-plumbing.jpg";
 import commercialImage from "../assets/commercial-image.JPG";
 
 export default function ServicesC() {
