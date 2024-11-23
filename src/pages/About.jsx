@@ -76,10 +76,11 @@ export default function About() {
           <p className="text-lg text-gray-300 leading-relaxed">
             At Armstrong Buildings, we take UK construction regulations
             seriously. Our work complies with the latest standards, including{" "}
-            <strong className="text-white">BS 5534</strong> (roofing) and{" "}
-            <strong className="text-white">BS 5268</strong> (timber structures),
-            ensuring that every project meets the highest safety and performance
-            requirements.
+            <strong className="font-bold text-green-500">BS 5534</strong>{" "}
+            (roofing) and{" "}
+            <strong className="font-bold text-green-500">BS 5268</strong>{" "}
+            (timber structures), ensuring that every project meets the highest
+            safety and performance requirements.
           </p>
         </div>
 
