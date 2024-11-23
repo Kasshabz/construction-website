@@ -49,10 +49,10 @@ export default function Contact() {
     <section className="bg-black">
       {/* Hero Section */}
 
-      <div className="relative h-64 md:h-80 lg:h-96 bg-green-500">
+      <div className="relative h-40 md:h-48 lg:h-56">
         {/* Centered Text */}
-        <div className="relative z-10 flex items-center justify-center h-full text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">
+        <div className="relative flex items-center justify-center h-full text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-green-500">
             Get In Touch With Us
           </h1>
         </div>
