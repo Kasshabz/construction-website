@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // React Router Link
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa"; // Social media icons
 
 export default function Footer() {
@@ -10,8 +11,7 @@ export default function Footer() {
           <h2 className="text-2xl font-bold">Armstrong Buildings</h2>
           <p className="text-gray-200">
             Building Your Future, One Project at a Time
-          </p>{" "}
-          {/* Adjust text color for better contrast */}
+          </p>
         </div>
 
         {/* Contact Info */}
@@ -61,18 +61,18 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div className="mb-4">
-          <a href="/" className="text-white hover:text-gray-200 px-2">
+          <Link to="/" className="text-white hover:text-gray-200 px-2">
             Home
-          </a>
-          <a href="/about" className="text-white hover:text-gray-200 px-2">
+          </Link>
+          <Link to="/about" className="text-white hover:text-gray-200 px-2">
             About Us
-          </a>
-          <a href="/services" className="text-white hover:text-gray-200 px-2">
+          </Link>
+          <Link to="/services" className="text-white hover:text-gray-200 px-2">
             Services
-          </a>
-          <a href="/contact" className="text-white hover:text-gray-200 px-2">
+          </Link>
+          <Link to="/contact" className="text-white hover:text-gray-200 px-2">
             Contact Us
-          </a>
+          </Link>
         </div>
 
         {/* Copyright */}
