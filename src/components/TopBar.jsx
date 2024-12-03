@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -48,7 +49,7 @@ export default function TopBar() {
             <FaFacebook />
           </a>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/company/armstrong-buildings/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-green-500">
