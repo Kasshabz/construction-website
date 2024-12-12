@@ -17,15 +17,21 @@ export default function Hero() {
       <div className="relative z-10 text-center max-w-lg">
         <h1 className="text-3xl font-bold mb-4">Armstrong Buildings</h1>
         <p className="text-lg leading-relaxed text-gray-200 mb-6">
-          With over 25 years of experience in the construction industry, we are
-          a trusted family-run business committed to delivering high-quality
-          craftsmanship. As proud members of the Federation of Master Builders,
-          we aim to set the standard for excellence in the North West. Our focus
-          is on providing personalised service, ensuring that every project is
-          completed to the highest standards and at a fair price.
+          With over 25 years of experience in construction, Armstrong Buildings
+          is a trusted family-run business specializing in high-quality
+          craftsmanship for residential and commercial projects. As proud
+          members of the Federation of Master Builders, we are dedicated to
+          setting the standard for construction excellence in the North West of
+          England. Our focus is on delivering tailored construction services,
+          from brickwork and groundwork to roofing and joinery, ensuring every
+          project meets the highest standards of quality and compliance with UK
+          building regulations. At Armstrong Buildings, we believe in offering
+          exceptional value, combining competitive pricing with unparalleled
+          customer service to create structures that stand the test of time.
         </p>
 
         <QuoteButton />
+        
       </div>
     </section>
   );

@@ -51,7 +51,7 @@ export default function Footer() {
             <FaFacebook size={24} />
           </a>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/company/armstrong-buildings/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-200">

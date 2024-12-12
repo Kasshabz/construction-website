@@ -1,5 +1,5 @@
 import React from "react";
-import ServicesC from "../components/ServicesC"; // Adjust the path based on where your ServicesC component is
+import ServicesC from "../components/ServicesC"; // Adjust the path based on your ServicesC component location
 import {
   FaHammer,
   FaHome,
@@ -17,34 +17,31 @@ export default function Services() {
         {/* Enhanced Services Introduction */}
         <h1 className="text-4xl font-bold text-green-500 mb-8">What We Do</h1>
         <p className="text-lg text-gray-300 mb-12 leading-relaxed">
-          At Armstrong Buildings, we offer a comprehensive range of construction
-          services to suit both residential and commercial clients. With over 25
-          years of experience in the industry, we understand that each project
-          is unique and requires a tailored approach.
-          <br />
-          <br />
-          Our services cover everything from{" "}
+          Armstrong Buildings is a trusted family-run construction business with
+          over <span className="font-bold text-green-500">25 years</span> of
+          experience. We specialize in delivering{" "}
+          <span className="font-bold text-green-500">high-quality</span>{" "}
+          construction services across the{" "}
           <span className="font-bold text-green-500">
-            brickwork and groundwork
-          </span>{" "}
-          to{" "}
-          <span className="font-bold text-green-500">
-            roofing, joinery, and plastering
+            North West of England
           </span>
-          . Whether you're looking for small renovations or large-scale
-          commercial projects, our skilled team is equipped to handle it all.
+          . Our tailored solutions include{" "}
+          <span className="font-bold text-green-500">
+            brickwork, groundwork, roofing, joinery, and plastering
+          </span>
+          , ensuring exceptional craftsmanship for every project.
           <br />
           <br />
-          We ensure that all projects comply with the latest{" "}
+          All our projects comply with{" "}
           <span className="font-bold text-green-500">
             UK Building Regulations
           </span>
-          , including safety standards such as{" "}
+          , including essential safety standards such as{" "}
           <span className="font-bold text-green-500">BS 5534</span> (roofing)
           and <span className="font-bold text-green-500">Part L</span>{" "}
-          (conservation of fuel and power). Our goal is to deliver exceptional
-          craftsmanship, on time, and within budget, while adhering to
-          sustainability practices and offering the best value for money.
+          (conservation of fuel and power). Whether it's small renovations or
+          large-scale commercial projects, Armstrong Buildings ensures timely
+          delivery, sustainability, and the best value for money.
         </p>
 
         {/* Icon-Based Overview Section */}
@@ -53,33 +50,35 @@ export default function Services() {
             <FaHammer className="text-green-500 text-4xl mb-2" />
             <h3 className="text-xl font-bold text-white">Brickwork</h3>
             <p className="text-gray-300">
-              Expert masonry for durable structures.
+              Expert masonry for durable and lasting structures.
             </p>
           </div>
           <div className="p-4 bg-gray-800 rounded-md shadow-md text-center">
             <FaHardHat className="text-green-500 text-4xl mb-2" />
             <h3 className="text-xl font-bold text-white">Groundwork</h3>
-            <p className="text-gray-300">Foundation and earthwork services.</p>
+            <p className="text-gray-300">
+              Solid foundations for every project.
+            </p>
           </div>
           <div className="p-4 bg-gray-800 rounded-md shadow-md text-center">
             <FaHome className="text-green-500 text-4xl mb-2" />
             <h3 className="text-xl font-bold text-white">Joinery</h3>
             <p className="text-gray-300">
-              Custom woodwork for interiors and exteriors.
+              Custom woodwork for functional and aesthetic appeal.
             </p>
           </div>
           <div className="p-4 bg-gray-800 rounded-md shadow-md text-center">
             <FaTools className="text-green-500 text-4xl mb-2" />
             <h3 className="text-xl font-bold text-white">Roofing</h3>
             <p className="text-gray-300">
-              Durable and stylish roofing solutions.
+              Reliable roofing solutions for every season.
             </p>
           </div>
           <div className="p-4 bg-gray-800 rounded-md shadow-md text-center">
             <FaPaintRoller className="text-green-500 text-4xl mb-2" />
             <h3 className="text-xl font-bold text-white">Plastering</h3>
             <p className="text-gray-300">
-              Smooth and durable finishes for walls.
+              Perfectly smooth finishes for walls and ceilings.
             </p>
           </div>
           <div className="p-4 bg-gray-800 rounded-md shadow-md text-center">
@@ -87,7 +86,9 @@ export default function Services() {
             <h3 className="text-xl font-bold text-white">
               Commercial Fit-outs
             </h3>
-            <p className="text-gray-300">Tailored solutions for businesses.</p>
+            <p className="text-gray-300">
+              Tailored interior solutions for your business.
+            </p>
           </div>
         </div>
 

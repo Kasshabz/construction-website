@@ -21,14 +21,18 @@ export default function About() {
             About Armstrong Buildings
           </h1>
           <p className="text-lg text-gray-300 leading-relaxed">
-            Armstrong Buildings is a family-run construction business with over
-            25 years of industry experience. Based in the United Kingdom, we
-            specialize in delivering high-quality construction services that
-            adhere to all relevant UK building regulations, ensuring that every
-            project is safe, compliant, and built to last. Our expertise covers
-            residential and commercial projects throughout the North West, and
-            we pride ourselves on offering tailored solutions to meet our
-            clients' specific needs.
+            Armstrong Buildings is a trusted family-run construction company
+            with over 25 years of experience in the construction industry. Based
+            in the United Kingdom, we specialize in delivering high-quality
+            construction services that meet all UK building regulations,
+            ensuring safety, compliance, and durability in every project. Our
+            expertise spans a wide range of residential and commercial
+            construction projects throughout the North West of England. At
+            Armstrong Buildings, we pride ourselves on providing tailored
+            construction solutions designed to meet the unique needs of our
+            clients. Whether it’s groundwork, roofing, or custom-fit projects,
+            we are committed to delivering exceptional craftsmanship and
+            outstanding customer satisfaction.
           </p>
         </div>
 
