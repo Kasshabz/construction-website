@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import QuoteButton from "./QuoteButton";
 import brickworkImage from "../assets/new-roof.jpg";
-import joineryImage from "../assets/venetian.JPG";
+import joineryImage from "../assets/venetian.jpg";
 import landscapingImage from "../assets/groundwork-new.jpg";
 import plumbingImage from "../assets/bathroom.jpg";
 import commercialImage from "../assets/commercial-image.JPG";
