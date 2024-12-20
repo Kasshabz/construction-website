@@ -2,10 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
-  },
-  theme: {
     extend: {
+      colors: {
+        gold: "#C9A835", // Add your custom gold color here
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },

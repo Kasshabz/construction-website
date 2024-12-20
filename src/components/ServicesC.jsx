@@ -1,63 +1,95 @@
 import React, { useState } from "react";
 import QuoteButton from "./QuoteButton";
-import brickworkImage from "../assets/brick-work1.JPG";
-import joineryImage from "../assets/joinery-roofing.JPG";
-import landscapingImage from "../assets/front-door.JPG";
-import plasteringImage from "../assets/plastering-rendering.JPG";
-import plumbingImage from "../assets/arm-plumbing.jpg";
+import brickworkImage from "../assets/new-roof.jpg";
+import joineryImage from "../assets/venetian.JPG";
+import landscapingImage from "../assets/groundwork-new.jpg";
+import plumbingImage from "../assets/bathroom.jpg";
 import commercialImage from "../assets/commercial-image.JPG";
+import roofingImage from "../assets/lux-roofing.jpg"; // Add your roofing image
 
 export default function ServicesC() {
   const services = [
     {
-      title: "Brickwork & Groundwork",
+      title: "Building Services",
       image: brickworkImage,
-      description: "Top-quality bricklaying and groundwork.",
-      moreInfo:
-        "Every brick and groundwork project complies with UK building regulations, ensuring safety and durability. We offer bespoke solutions for your specific needs, using high-quality materials to deliver lasting results.",
+      description: "Expert new builds, renovations, and loft conversions.",
+      moreInfo: `
+        - New Builds: Modern, energy-efficient designs tailored to your needs.
+        - Extensions: Seamless integration with your existing structure.
+        - Renovations: Transform your property with bespoke craftsmanship.
+        - Loft Conversions: Maximize space with innovative solutions.
+        - Brickwork: Durable and aesthetically pleasing bricklaying.
+      `,
     },
     {
-      title: "Joinery & Roofing",
+      title: "Premium Decor",
       image: joineryImage,
-      description: "Expert joinery and roofing services.",
-      moreInfo:
-        "Adhering to British Standards (BS 5534 for roofs and BS 5268 for timber structures), we offer tailored joinery and roofing services. Whether it’s a minor repair or a complete installation, our use of premium materials ensures a durable finish.",
+      description: "Elegant plastering, Venetian finishes, and more.",
+      moreInfo: `
+        - Plastering: Smooth, flawless walls for a premium finish.
+        - Decorating: Stylish interior and exterior painting solutions.
+        - Venetian Plaster: Luxurious, polished surfaces for standout designs.
+        - Microcement: Durable, contemporary finishes for any space.
+        - Rendering: Weather-resistant, beautiful exterior treatments.
+      `,
     },
     {
-      title: "Landscaping & Driveways",
+      title: "Groundworks",
       image: landscapingImage,
-      description: "Professional landscaping and driveway services.",
-      moreInfo:
-        "All landscaping and driveway installations are fully compliant with UK planning regulations. We design and build outdoor spaces that are both beautiful and practical, using top-tier materials to enhance your property’s value.",
-    },
-    {
-      title: "Plastering & Rendering",
-      image: plasteringImage,
-      description: "High-quality plastering and rendering services.",
-      moreInfo:
-        "Our plastering and rendering work adheres to UK building standards, providing both aesthetic appeal and protection. We deliver tailored finishes that ensure long-lasting, smooth surfaces for both interior and exterior applications.",
+      description: "Quality landscaping, driveways, and concrete finishes.",
+      moreInfo: `
+        - Impressed Concrete: Durable, visually striking surfaces.
+        - Block Paving: Classic designs for driveways and patios.
+        - Resin Finishes: Low-maintenance, slip-resistant beauty.
+        - Astroturf: Perfectly green lawns year-round.
+        - Landscaping: Transform your outdoor spaces into an oasis.
+        - Driveways: Long-lasting, attractive entrance solutions.
+      `,
     },
     {
       title: "Plumbing",
       image: plumbingImage,
-      description: "Reliable and efficient plumbing services.",
-      moreInfo:
-        "Meeting all British plumbing regulations, we provide expert plumbing solutions for repairs, installations, and maintenance. We ensure that water systems are safe, efficient, and tailored to the needs of each project.",
+      description: "24/7 plumbing and drainage services for your needs.",
+      moreInfo: `
+        - Boiler Services: Installation and maintenance for all types.
+        - First & Second Fix Pipework: Precision for every phase.
+        - Drainage: Reliable solutions for clean and functional systems.
+        - 24/7 Emergency Service: Rapid response for urgent repairs.
+      `,
+    },
+    {
+      title: "Roofing",
+      image: roofingImage,
+      description: "Reliable and durable roofing solutions for every project.",
+      moreInfo: `
+        - New Roofs: High-quality materials for long-lasting results.
+        - Roof Repairs: Quick and efficient solutions for leaks or damage.
+        - Flat Roofs: Expertly installed for durability and function.
+        - Slate and Tile: Classic designs with modern durability.
+        - Insulation: Energy-efficient solutions for every roof type.
+      `,
     },
     {
       title: "Commercial Fit-outs",
       image: commercialImage,
-      description: "Custom commercial fit-out services.",
-      moreInfo:
-        "Fully compliant with UK building and safety regulations, we offer tailored commercial fit-out services that balance functionality and design. From offices to retail spaces, we ensure quality craftsmanship in every project.",
+      description: "Tailored solutions for offices, hotels, and restaurants.",
+      moreInfo: `
+        - Restaurants: Functional, stylish dining spaces.
+        - Offices: Custom layouts for productivity and comfort.
+        - Flats: Modern interiors designed for practical living.
+        - Showrooms: Showcase your products in style.
+        - Hotels: Elegant designs for luxurious guest experiences.
+      `,
     },
   ];
 
   return (
     <section className="bg-black py-12">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold text-white mb-8">Our Services</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-gold text-center mb-8">
+          Our Services
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <FlipCard key={index} service={service} />
           ))}
@@ -78,42 +110,54 @@ function FlipCard({ service }) {
         position: "relative",
         width: "100%",
         height: "100%",
-        maxWidth: "300px",
-        maxHeight: "400px",
+        maxWidth: "350px", // Adjust width for laptops
         margin: "auto",
       }}>
       {/* Front of the card */}
-      <div className="flip-card-front relative p-6 border rounded-lg shadow-lg bg-white overflow-hidden h-full">
+      <div
+        className="flip-card-front relative border rounded-lg shadow-lg overflow-hidden h-full"
+        style={{
+          backgroundColor: "#000",
+          color: "#FFFFFF",
+        }}>
         <img
           src={service.image}
           alt={service.title}
-          className="h-64 w-full object-cover rounded-lg mb-4"
+          className="h-64 w-full object-cover rounded-t-lg"
         />
-        {/* Title overlay */}
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
-          <h3 className="text-2xl font-bold">{service.title}</h3>
+        <div className="p-4">
+          <h3 className="text-lg font-bold text-gold">{service.title}</h3>
+          <p className="text-white mt-2 text-sm">{service.description}</p>
+          <button
+            className="mt-4 rounded bg-gold py-2 px-4 text-black hover:bg-yellow-700"
+            onClick={(e) => {
+              e.stopPropagation(); // Prevent flipping the card when clicking the button
+              setFlipped(true);
+            }}>
+            Find Out More
+          </button>
         </div>
-        <button
-          className="mt-4 rounded bg-green-600 py-2 px-4 text-white hover:bg-green-700"
-          onClick={(e) => {
-            e.stopPropagation(); // Prevent flipping the card when clicking the button
-            setFlipped(true);
-          }}>
-          Find Out More
-        </button>
       </div>
 
       {/* Back of the card */}
-      <div className="flip-card-back p-6 border rounded-lg shadow-lg bg-white flex flex-col items-start space-y-4 h-full">
-        <h3 className="text-xl font-bold text-black mb-2">{service.title}</h3>
-        <p className="text-gray-800">{service.moreInfo}</p>
-
-        {/* Quote Button - Primary CTA */}
+      <div
+        className="flip-card-back p-4 border rounded-lg shadow-lg flex flex-col items-start space-y-4 h-full"
+        style={{
+          backgroundColor: "#000",
+          color: "#FFFFFF",
+        }}>
+        <h3 className="text-lg font-bold text-gold mb-2">{service.title}</h3>
+        <ul className="list-disc pl-5 text-white text-sm">
+          {service.moreInfo
+            .split("\n")
+            .filter((line) => line.trim() !== "")
+            .map((item, idx) => (
+              <li key={idx}>{item.trim()}</li>
+            ))}
+        </ul>
         <QuoteButton />
-
-        {/* Close Button - Secondary Action */}
         <button
-          className="rounded bg-red-600 py-2 px-4 text-white hover:bg-red-700 w-25"
+          className="rounded bg-red-600 py-1 px-3 text-white hover:bg-red-700 w-auto"
           onClick={(e) => {
             e.stopPropagation(); // Prevent flipping the card when clicking the button
             setFlipped(false);

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import axios from "axios";
-import tilingImage from "../assets/tiling-image.JPG";
-import backGarden from "../assets/back-garden.JPG";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    mobile: "",
+    postcode: "",
     message: "",
   });
   const [statusMessage, setStatusMessage] = useState("");
@@ -21,8 +21,8 @@ export default function Contact() {
     e.preventDefault();
     setStatusMessage("");
 
-    const { name, email, message } = formData;
-    if (!name || !email || !message) {
+    const { name, email, mobile, postcode, message } = formData;
+    if (!name || !email || !mobile || !postcode || !message) {
       setStatusMessage("All fields are required.");
       return;
     }
@@ -46,45 +46,20 @@ export default function Contact() {
   };
 
   return (
-    <section className="bg-black">
-      {/* Hero Section */}
-
-      <div className="relative h-40 md:h-48 lg:h-56">
-        {/* Centered Text */}
-        <div className="relative flex items-center justify-center h-full text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-green-500">
-            Get In Touch With Us
-          </h1>
-        </div>
+    <section className="bg-black py-12">
+      {/* Header Section */}
+      <div className="text-center mb-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-gold">
+          Get In Touch With Us
+        </h1>
+        <p className="text-gray-300 text-lg mt-2">
+          Have any questions? We’d love to hear from you.
+        </p>
       </div>
 
-      <div className="container mx-auto px-4 py-12 text-center">
-        {/* Contact Info */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">Contact Us</h2>
-          <p className="text-lg text-gray-300 mb-4">
-            Have any questions? We’d love to hear from you.
-          </p>
-          <p className="text-lg text-gray-300">
-            Email:{" "}
-            <a
-              href="mailto:joseph@armstrongbuildings.co.uk"
-              className="text-green-500 hover:underline">
-              joseph@armstrongbuildings.co.uk
-            </a>
-          </p>
-          <p className="text-lg text-gray-300">
-            Phone:{" "}
-            <a
-              href="tel:+44 7387 500116"
-              className="text-green-500 hover:underline">
-              07387 500116
-            </a>
-          </p>
-        </div>
-
-        {/* Contact Form */}
-        <div className="max-w-lg mx-auto bg-gray-800 bg-opacity-90 p-8 rounded-lg shadow-lg">
+      {/* Form Section */}
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto bg-gray-900 p-6 rounded-lg shadow-lg">
           <form onSubmit={handleSubmit}>
             <div className="mb-6">
               <label className="block text-white mb-2 text-left">Name</label>
@@ -94,7 +69,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full p-3 rounded bg-gray-200 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full p-3 rounded bg-gray-200 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
                 placeholder="Your name"
               />
             </div>
@@ -106,8 +81,34 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full p-3 rounded bg-gray-200 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full p-3 rounded bg-gray-200 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
                 placeholder="Your email"
+              />
+            </div>
+            <div className="mb-6">
+              <label className="block text-white mb-2 text-left">Mobile</label>
+              <input
+                type="tel"
+                name="mobile"
+                value={formData.mobile}
+                onChange={handleChange}
+                required
+                className="w-full p-3 rounded bg-gray-200 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
+                placeholder="Your mobile number"
+              />
+            </div>
+            <div className="mb-6">
+              <label className="block text-white mb-2 text-left">
+                Postcode
+              </label>
+              <input
+                type="text"
+                name="postcode"
+                value={formData.postcode}
+                onChange={handleChange}
+                required
+                className="w-full p-3 rounded bg-gray-200 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
+                placeholder="Your postcode"
               />
             </div>
             <div className="mb-6">
@@ -117,11 +118,13 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full p-3 rounded bg-gray-200 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full p-3 rounded bg-gray-200 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
                 placeholder="Your message"
                 rows="4"></textarea>
             </div>
-            <button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded">
+            <button
+              type="submit"
+              className="w-full bg-gold hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded">
               Submit
             </button>
           </form>
@@ -138,28 +141,28 @@ export default function Contact() {
         </div>
 
         {/* Social Media Links */}
-        <div className="mt-12">
-          <h3 className="text-xl font-bold text-white mb-4">Connect With Us</h3>
+        <div className="text-center mt-12">
+          <h3 className="text-xl font-bold text-gold mb-4">Connect With Us</h3>
           <div className="flex justify-center space-x-6">
             <a
               href="https://www.instagram.com/armstrong_building/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-green-500 transition">
+              className="text-white hover:text-gold transition">
               <FaInstagram size={30} />
             </a>
             <a
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-green-500 transition">
+              className="text-white hover:text-gold transition">
               <FaFacebook size={30} />
             </a>
             <a
               href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-green-500 transition">
+              className="text-white hover:text-gold transition">
               <FaLinkedin size={30} />
             </a>
           </div>

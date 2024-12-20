@@ -5,12 +5,12 @@ import About from "../pages/About";
 import Services from "../pages/Services";
 import Contact from "../pages/Contact";
 import Footer from "./Footer";
-import TopBar from "./TopBar";
+// import TopBar from "./TopBar";
 
 function App() {
   return (
     <>
-      <TopBar />
+      {/* <TopBar /> */}
       <Navbar />
       {/* Wrap the Routes in a div that applies a full black background */}
       <div className="bg-black text-white min-h-screen">
