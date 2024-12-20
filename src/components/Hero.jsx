@@ -1,5 +1,5 @@
 import React from "react";
-import teamPic from "../assets/garden.JPG";
+import teamPic from "../assets/garden.jpg";
 import logo from "../assets/Transparent Logo.png";
 import QuoteButton from "./QuoteButton";
 
