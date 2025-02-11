@@ -115,14 +115,14 @@ export default function Navbar() {
               <FaInstagram size={20} />
             </a>
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=61571737344698&locale=en_GB"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gold">
               <FaFacebook size={20} />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/armstrong-buildings/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gold">

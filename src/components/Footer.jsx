@@ -44,7 +44,7 @@ export default function Footer() {
             <FaInstagram size={24} />
           </a>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=61571737344698&locale=en_GB"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gold hover:text-white">
